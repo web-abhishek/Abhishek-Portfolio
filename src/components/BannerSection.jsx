@@ -12,8 +12,8 @@ const Banner = () => {
     <div className="flex items-center">
       <div>
         <div>
-          <span>Welcome to my world</span>
-          <h1>Hi, I’m Jone Lee a Developer.Professional Coder.Developer.</h1>
+          <span className="text-2xl">Welcome Here!</span>
+          <h1 className="text-5xl font-bold text-white">Hi, I’m Jone Lee a <br></br>Developer.Professional Coder.Developer.</h1>
           <p>
             I use animation as a third dimension by which to simplify
             experiences and kuiding thro each and every interaction. I’m not
