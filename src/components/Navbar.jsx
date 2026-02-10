@@ -1,11 +1,8 @@
 import React from "react";
 import logo from "../assets/logo.png";
-import { NavLink } from "react-router-dom";
-import { FaLinkedinIn } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa6";
 import { IoCall } from "react-icons/io5";
 import { IoMdMail } from "react-icons/io";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { Menu, X, Download } from 'lucide-react';
 
 const Navbar = () => {
   const navClass = ({ isActive }) => `px-3 py-2 text-sm font-medium
@@ -25,31 +22,15 @@ const Navbar = () => {
       <div>
         <img alt="logo" src={logo} className="w-34" />
       </div>
-      <div>
-        <NavLink to="/" className={navClass}>
-          Home
-        </NavLink>
-        <NavLink to="/about" className={navClass}>
-          About
-        </NavLink>
-        <NavLink to="/projects" className={navClass}>
-          Projects
-        </NavLink>
-        <NavLink to="/contact" className={navClass}>
-          Contact
-        </NavLink>
-      </div>
       <div className="flex items-center gap-3">
-        {[FaLinkedinIn, FaGithub, GiHamburgerMenu].map(
-          (Icon, i) => (
-            <div
-              key={i}
-              className="p-3 rounded-full bg-gray-800 hover:bg-pink-500 transition cursor-pointer"
-            >
-              <Icon className="text-lg text-white group-hover:text-white transition" />
-            </div>
-          )
-        )}
+        <a
+                href="/resume.pdf"
+                download
+                className="mt-2 mx-4 inline-flex items-center justify-center gap-2 px-4 py-3 text-sm font-medium gradient-primary text-primary-foreground rounded-lg"
+              >
+                <Download className="w-4 h-4" />
+                Download Resume
+              </a>
       </div>
     </div>
     </div>

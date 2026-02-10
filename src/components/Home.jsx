@@ -1,18 +1,17 @@
 import BannerSection from "./BannerSection";
-import AboutSection from "./AboutSection";
-
 import ExperienceSection from "./ExperienceSection";
 import SkillsCard from "./SkillsCard";
-import Projects from "./Projects";
+import MarqueeMain from "./MarqueeMain";
+import ProjectsMain from "./ProjectsMain";
 
 const Home = () =>{
     return(
         <div>
-            <BannerSection/>
-            <AboutSection/>
-            <Projects limit={3} showViewMore/>
-            <SkillsCard/>
-            <ExperienceSection/>
+            <BannerSection />
+            <MarqueeMain />
+            <ProjectsMain />
+            <SkillsCard />
+            <ExperienceSection />
         </div>
     )
 }
