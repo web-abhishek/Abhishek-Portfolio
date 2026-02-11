@@ -21,7 +21,7 @@ const ProjectCard = ({ project }) => {
           <img src={thumbnail} alt={title} className="rounded-4xl" />
         </div>
         <div className="p-5">
-          <h2 className="font-bold mb-3 text-3xl text-white">
+          <h2 className="font-bold mb-3 text-3xl text-white font-primary">
             <a href="">{title}</a>
           </h2>
           <p className="font-normal text-md text-gray-400 block mt-6">

@@ -8,8 +8,8 @@ import { RouterProvider } from "react-router-dom";
 function App() {
   return (
     <Provider store={AppStore}>
-   <div className="bg-[#212428]">
-      <div className="container mx-auto font-bevellier">
+   <div className="bg-[#212428] font-secondary">
+      <div className="container mx-auto">
         <Navbar />
         <Outlet />
         <Footer />

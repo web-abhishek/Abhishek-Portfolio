@@ -18,96 +18,80 @@ const iconBox =
 
 const SkillsCard = () => {
   return (
-    <div className="py-30 grid grid-cols-3 gap-10">
+    <div className=" my-40 grid grid-cols-3 gap-10">
       <div>
-        <h1 className="text-[#f1514d] text-6xl font-bold mb-5">Skills On</h1>
-        <p className="text-gray-300 text-base tracking-wide">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. amet
-          consectetur adipisicing elit. amet consectetur adipisicing elit.
-          Rerum, necessitatibus. amet consectetur adipisicing elit. amet
-          consectetur adipisicing elit. Rerum, necessitatibus! Lorem ipsum 
-          dolor sit amet consectetur adipisicing elit. Obcaecati numquam minus cum?
+        <h1 className="text-4xl md:text-5xl font-primary font-bold font-display mb-4 animate-fade-in color-primary">Technical Skills</h1>
+        <p className="color-secondary text-base tracking-wide leading-7">
+          I build scalable and high-performance web applications using React.js,
+          JavaScript (ES6+), and TypeScript. Skilled in Redux Toolkit, API integration,
+          performance optimization, and modern responsive UI development with Tailwind CSS.
         </p>
       </div>
 
       <div className="px-10 py-12 rounded-4xl bg-[linear-gradient(145deg,#1e2024,#23272b)] hover:bg-[linear-gradient(to_right_bottom,#212428,#16181c)] transition-all duration-300 shadow-[10px_10px_19px_#1c1e22,-10px_-10px_19px_#262a2e]">
-        <h1 className="text-gray-200 text-2xl font-medium pb-3">
-          Frontend Development
+        <h1 className="color-reddish text-2xl font-medium mb-4">
+          Frontend Engineering
         </h1>
 
-        <span className="text-gray-300 text-md leading-8 tracking-wide">
+        <span className="color-secondary text-md leading-7 tracking-wide">
           React.js, JavaScript (ES6+), TypeScript, HTML5, CSS3, SASS, Tailwind
           CSS, Bootstrap 5
         </span>
 
-        <div className="flex gap-5 items-center mt-5">
+        <div className="flex gap-5 flex-wrap items-center my-10">
           {[reactjs, js, typescript, html, css].map((icon, i) => (
             <div key={i} className={iconBox}>
               <img src={icon} className="w-8 h-8" />
             </div>
           ))}
         </div>
-
-        <p className="text-gray-400 mt-4 leading-7">
-          Building scalable, responsive, and component-driven user interfaces
-          with modern frontend technologies.
-        </p>
       </div>
 
       <div className="px-10 py-12 rounded-4xl bg-[linear-gradient(145deg,#1e2024,#23272b)] hover:bg-[linear-gradient(to_right_bottom,#212428,#16181c)] transition-all duration-300 shadow-[10px_10px_19px_#1c1e22,-10px_-10px_19px_#262a2e]">
-        <h1 className="text-white text-2xl font-medium pb-3">
-          State Management
+        <h1 className="color-reddish text-2xl font-medium mb-4">
+          Scalable State Management
         </h1>
 
-        <span className="text-gray-400 text-md">
+        <span className="color-secondary text-md leading-7 tracking-wide">
           Redux Toolkit, Context API
         </span>
 
-        <div className="flex gap-5 items-center mt-5">
+        <div className="flex gap-5 flex-wrap items-center my-10">
           {[redux, contextapi].map((icon, i) => (
             <div key={i} className={iconBox}>
               <img src={icon} className="w-8 h-8" />
             </div>
           ))}
         </div>
-
-        <p className="text-gray-400 mt-4 leading-7">
-          Managing complex application state efficiently with predictable data
-          flow and scalable architecture.
-        </p>
       </div>
 
       <div className="px-10 py-12 rounded-4xl bg-[linear-gradient(145deg,#1e2024,#23272b)] hover:bg-[linear-gradient(to_right_bottom,#212428,#16181c)] transition-all duration-300 shadow-[10px_10px_19px_#1c1e22,-10px_-10px_19px_#262a2e]">
-        <h1 className="text-white text-2xl font-medium pb-3">
-          Performance & Optimization
+        <h1 className="color-reddish text-2xl font-medium mb-4">
+          Application Optimization
         </h1>
 
-        <span className="text-gray-400 text-md">
+        <span className="color-secondary text-md leading-7 tracking-wide">
           Code Splitting, Lazy Loading, Memoization
         </span>
 
-        <div className="flex gap-5 items-center mt-5">
+        <div className="flex gap-5 flex-wrap items-center my-10">
           {[reactjs, js].map((icon, i) => (
             <div key={i} className={iconBox}>
               <img src={icon} className="w-8 h-8" />
             </div>
           ))}
         </div>
-
-        <p className="text-gray-400 mt-4 leading-7">
-          Optimizing React apps for faster load time, smaller bundles, and
-          smoother UX.
-        </p>
       </div>
-
       <div className="px-10 py-12 rounded-4xl bg-[linear-gradient(145deg,#1e2024,#23272b)] hover:bg-[linear-gradient(to_right_bottom,#212428,#16181c)] transition-all duration-300 shadow-[10px_10px_19px_#1c1e22,-10px_-10px_19px_#262a2e]">
-        <h1 className="text-white text-2xl font-medium pb-3">Testing</h1>
+        <h1 className="color-reddish text-2xl font-medium mb-4">
+          Application Testing
+        </h1>
 
-        <span className="text-gray-400 text-md">
+        <span className="color-secondary text-md leading-7 tracking-wide">
           Jest, React Testing Library
         </span>
 
-        <div className="flex gap-5 items-center mt-5">
+        <div className="flex gap-5 flex-wrap items-center my-10">
           {[jest, test].map((icon, i) => (
             <div key={i} className={iconBox}>
               <img src={icon} className="w-8 h-8" />
@@ -115,33 +99,23 @@ const SkillsCard = () => {
           ))}
         </div>
 
-        <p className="text-gray-400 mt-4 leading-7">
-          Writing unit and component tests to ensure reliability and
-          maintainability.
-        </p>
       </div>
-
       <div className="px-10 py-12 rounded-4xl bg-[linear-gradient(145deg,#1e2024,#23272b)] hover:bg-[linear-gradient(to_right_bottom,#212428,#16181c)] transition-all duration-300 shadow-[10px_10px_19px_#1c1e22,-10px_-10px_19px_#262a2e]">
-        <h1 className="text-white text-2xl font-medium pb-3">
-          Tools & Integrations
+        <h1 className="color-reddish text-2xl font-medium mb-4">
+          Other Tools & API Integration
         </h1>
 
-        <span className="text-gray-400 text-md">
+        <span className="color-secondary text-md leading-7 tracking-wide">
           GitHub, Figma, REST APIs, GraphQL
         </span>
 
-        <div className="flex gap-5 items-center mt-5">
+        <div className="flex gap-5 flex-wrap items-center my-10">
           {[figma, rest, graphQL].map((icon, i) => (
             <div key={i} className={iconBox}>
               <img src={icon} className="w-8 h-8" />
             </div>
           ))}
         </div>
-
-        <p className="text-gray-400 mt-4 leading-7">
-          Collaborating via GitHub, converting Figma designs into UI, and
-          integrating APIs for dynamic data.
-        </p>
       </div>
     </div>
   );

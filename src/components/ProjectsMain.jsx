@@ -27,12 +27,12 @@ const Projects = () => {
         <>
             <section className="py-16 md:py-24 hero-gradient">
                 <div className="container-custom text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold font-display mb-4 animate-fade-in text-gray-300">
-                        All Projects
+                    <h1 className="text-4xl md:text-5xl font-primary font-bold font-display mb-4 animate-fade-in color-primary">
+                        Featured Projects
                     </h1>
-                    <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in animation-delay-100">
-                        A collection of projects I've worked on, from full-stack applications to
-                        beautiful frontend interfaces. Each project represents my commitment to quality.
+                    <p className="text-lg text-muted-foreground font-secondary max-w-3xl mx-auto animate-fade-in animation-delay-100 color-secondary">
+                        A collection of projects I've worked on, from design applications to
+                        beautiful frontend interfaces. Real-World Applications, Practical Solutions and Clean Architecture.
                     </p>
                 </div>
             </section>
@@ -42,12 +42,12 @@ const Projects = () => {
                    
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                       
-                        <div className="flex flex-wrap justify-center gap-2">
+                        <div className="flex flex-wrap justify-center gap-2 items-center">
                             <span className="text-sm text-muted-foreground mr-2">Category:</span>
                             <button
                                 onClick={() => dispatch(setCategoryFilter(null))}
                                 className={`px-3 py-1.5 text-sm rounded-full transition-colors ${!filters.category
-                                        ? 'bg-primary text-primary-foreground'
+                                        ? 'bg-reddish text-primary-foreground'
                                         : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
                                     }`}
                             >
@@ -58,7 +58,7 @@ const Projects = () => {
                                     key={category}
                                     onClick={() => dispatch(setCategoryFilter(category))}
                                     className={`px-3 py-1.5 text-sm rounded-full transition-colors ${filters.category === category
-                                            ? 'bg-primary text-primary-foreground'
+                                            ? 'bg-reddish text-primary-foreground'
                                             : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
                                         }`}
                                 >
@@ -69,12 +69,12 @@ const Projects = () => {
 
                         <div className="hidden sm:block w-px h-6 bg-border" />
 
-                        <div className="flex flex-wrap justify-center gap-2">
+                        <div className="flex flex-wrap justify-center gap-2 items-center">
                             <span className="text-sm text-muted-foreground mr-2">Tech:</span>
                             <button
                                 onClick={() => dispatch(setTechnologyFilter(null))}
                                 className={`px-3 py-1.5 text-sm rounded-full transition-colors ${!filters.technology
-                                        ? 'bg-primary text-primary-foreground'
+                                        ? 'bg-reddish text-primary-foreground'
                                         : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
                                     }`}
                             >
@@ -85,7 +85,7 @@ const Projects = () => {
                                     key={tech}
                                     onClick={() => dispatch(setTechnologyFilter(tech))}
                                     className={`px-3 py-1.5 text-sm rounded-full transition-colors ${filters.technology === tech
-                                            ? 'bg-primary text-primary-foreground'
+                                            ? 'bg-reddish text-primary-foreground'
                                             : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
                                         }`}
                                 >
@@ -95,50 +95,7 @@ const Projects = () => {
                         </div>
                     </div>
 
-                    {hasActiveFilters && (
-                        <div className="flex items-center justify-center gap-2 mt-4">
-                            <span className="text-sm text-muted-foreground">Active filters:</span>
-                            {filters.category && (
-                                <Badge variant="default">
-                                    {filters.category}
-                                    <button
-                                        onClick={() => dispatch(setCategoryFilter(null))}
-                                        className="ml-1 hover:text-destructive"
-                                    >
-                                        <X className="w-3 h-3" />
-                                    </button>
-                                </Badge>
-                            )}
-                            {filters.technology && (
-                                <Badge variant="default">
-                                    {filters.technology}
-                                    <button
-                                        onClick={() => dispatch(setTechnologyFilter(null))}
-                                        className="ml-1 hover:text-destructive"
-                                    >
-                                        <X className="w-3 h-3" />
-                                    </button>
-                                </Badge>
-                            )}
-                            {filters.searchQuery && (
-                                <Badge variant="default">
-                                    "{filters.searchQuery}"
-                                    <button
-                                        onClick={() => dispatch(setSearchQuery(''))}
-                                        className="ml-1 hover:text-destructive"
-                                    >
-                                        <X className="w-3 h-3" />
-                                    </button>
-                                </Badge>
-                            )}
-                            <button
-                                onClick={() => dispatch(clearFilters())}
-                                className="text-sm text-destructive hover:underline ml-2"
-                            >
-                                Clear all
-                            </button>
-                        </div>
-                    )}
+                    
                 </div>
             </section>
 

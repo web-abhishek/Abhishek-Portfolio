@@ -11,8 +11,8 @@ const Contact = () => {
     ];
 
     const socialLinks = [
-        { href: 'https://github.com/johndoe', icon: Github, label: 'GitHub' },
-        { href: 'https://linkedin.com/in/johndoe', icon: Linkedin, label: 'LinkedIn' },
+        { href: 'https://github.com/web-abhishek', icon: Github, label: 'GitHub' },
+        { href: 'https://www.linkedin.com/in/web-abhiacharya/', icon: Linkedin, label: 'LinkedIn' },
         { href: 'https://twitter.com/johndoe', icon: Twitter, label: 'Twitter' }
     ];
 
