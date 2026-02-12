@@ -1,3 +1,4 @@
+import { ExternalLink } from "lucide-react";
 
 const ProjectCard = ({ project }) => {
   // console.log(project);
@@ -6,7 +7,7 @@ const ProjectCard = ({ project }) => {
   const { 
     id, 
     title, 
-    shortDescription, 
+    description, 
     technologies, 
     thumbnail,  
     liveUrl, 
@@ -25,24 +26,53 @@ const ProjectCard = ({ project }) => {
             <a href="">{title}</a>
           </h2>
           <p className="font-normal text-md text-gray-400 block mt-6">
-            {shortDescription}
+            {description}
           </p>
           <p className="font-normal text-md text-gray-400 block mb-3">
             Tech Stack Used:
           </p>
           <div className="flex flex-wrap items-center gap-3.5">
             {technologies?.map((item, i)=>
-            <span key={i} className="rounded px-3 py-2 bg-gray-800 text-white text-sm font-normal border border-gray-700">
+            <span key={i} className="rounded px-3 py-2 bg-gray-800 color-primary text-sm font-normal border border-gray-700">
               {item}
             </span>
           )}
           </div>
-          <a href={liveUrl} className="font-normal text-md text-gray-400 block mt-6">
+          {/* <a href={liveUrl} className="font-normal text-md text-gray-400 block mt-6">
             Live Demo: {liveUrl}
           </a>
           <a href={githubUrl} className="font-normal text-md text-gray-400 block mt-3">
             View Code: {githubUrl}
-          </a>
+          </a> */}
+        
+        <div className="mt-6 flex flex-wrap gap-4">
+  {liveUrl && (
+    <a
+      href={liveUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-center px-6 py-3 rounded-lg 
+                 bg-[#f2574f] text-white font-medium 
+                 hover:opacity-90 transition-all duration-300 flex items-center gap-3"
+    >
+      Live Demo <ExternalLink/>
+    </a>
+  )}
+
+  {githubUrl && (
+    <a
+      href={githubUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-center px-6 py-3 rounded-lg 
+                 border border-[#f2574f] text-[#f2574f] font-medium 
+                 hover:bg-[#f2574f] hover:text-white 
+                 transition-all duration-300 flex items-center gap-3"
+    >
+      View Code <ExternalLink />
+    </a>
+  )}
+</div>
         </div>
       </div>
   );

@@ -26,10 +26,10 @@ const MarqueeMain = () => {
                 </span>
             </Marquee>
 
-            <div className="absolute -right-2 top-2">
+            <div className="absolute -right-2 top-2 overflow-hidden">
                     <img src={rightbg} />
                   </div>
-                  <div className="absolute -left-2 top-2">
+                  <div className="absolute -left-2 top-2 overflow-hidden">
                     <img src={leftbg} />
                   </div>
         </div>

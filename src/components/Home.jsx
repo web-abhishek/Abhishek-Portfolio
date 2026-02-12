@@ -3,6 +3,7 @@ import ExperienceSection from "./ExperienceSection";
 import SkillsCard from "./SkillsCard";
 import MarqueeMain from "./MarqueeMain";
 import ProjectsMain from "./ProjectsMain";
+import Contact from "./Contacts";
 
 const Home = () =>{
     return(
@@ -12,6 +13,7 @@ const Home = () =>{
             <ProjectsMain />
             <SkillsCard />
             <ExperienceSection />
+            <Contact/>
         </div>
     )
 }

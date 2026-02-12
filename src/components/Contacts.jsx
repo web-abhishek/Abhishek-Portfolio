@@ -5,9 +5,9 @@ import SocialLink from './SocialLink';
 const Contact = () => {
 
     const contactInfo = [
-        { icon: MapPin, label: 'Location', value: 'San Francisco, CA, USA' },
-        { icon: Mail, label: 'Email', value: 'john@example.com', href: 'mailto:john@example.com' },
-        { icon: Phone, label: 'Phone', value: '+1 (555) 123-4567', href: 'tel:+15551234567' }
+        { icon: MapPin, label: 'Location', value: 'Kolkata, India' },
+        { icon: Mail, label: 'Email', value: 'web.abhiacharya@gmail.com', href: 'mailto:web.abhiacharya@gmail.com' },
+        { icon: Phone, label: 'Phone', value: '(+91) 9570258922', href: 'tel:+919570258922' }
     ];
 
     const socialLinks = [
@@ -31,16 +31,8 @@ const Contact = () => {
                 </div>
             </section>
 
-            {/* Contact Section */}
             <section className="section-padding">
-                <div className="p-10 h-full text-center rounded-3xl bg-[linear-gradient(145deg,#1e2024,#23272b)] 
-                hover:bg-[linear-gradient(to_right_bottom,#212428,#16181c)] transition-all duration-300
-                shadow-[10px_10px_19px_#1c1e22,-10px_-10px_19px_#262a2e] animate-fade-in">
-                    <h2 className="text-2xl font-bold font-display text-gray-400 mb-6">
-                        Contact Information
-                    </h2>
-
-                    <div className="flex justify-around space-y-6 my-15 text-left">
+                <div className="flex justify-around space-y-6 my-15 text-left">
                         {contactInfo.map((info) => (
                             <div key={info.label} className="flex items-start gap-4">
                                 <div className="p-3 rounded-lg text-gray-400">
@@ -62,17 +54,14 @@ const Contact = () => {
                             </div>
                         ))}
                     </div>
-
-                    {/* Social Links */}
-                    <div>
-                        <h3 className="font-semibold text-gray-400 my-10">Connect with me</h3>
+                <div className='my-15'>
+                        <h3 className="font-semibold text-gray-400 my-10 text-center">Connect with me</h3>
                         <div className="flex justify-center gap-3">
                             {socialLinks.map((social) => (
                                 <SocialLink key={social.label} {...social} />
                             ))}
                         </div>
                     </div>
-                </div>
             </section>
         </>
     );

@@ -38,7 +38,7 @@ const SkillsCard = () => {
           CSS, Bootstrap 5
         </span>
 
-        <div className="flex gap-5 flex-wrap items-center my-10">
+        <div className="flex gap-5 flex-wrap items-center mt-10">
           {[reactjs, js, typescript, html, css].map((icon, i) => (
             <div key={i} className={iconBox}>
               <img src={icon} className="w-8 h-8" />
@@ -56,7 +56,7 @@ const SkillsCard = () => {
           Redux Toolkit, Context API
         </span>
 
-        <div className="flex gap-5 flex-wrap items-center my-10">
+        <div className="flex gap-5 flex-wrap items-center mt-10">
           {[redux, contextapi].map((icon, i) => (
             <div key={i} className={iconBox}>
               <img src={icon} className="w-8 h-8" />
@@ -74,7 +74,7 @@ const SkillsCard = () => {
           Code Splitting, Lazy Loading, Memoization
         </span>
 
-        <div className="flex gap-5 flex-wrap items-center my-10">
+        <div className="flex gap-5 flex-wrap items-center mt-10">
           {[reactjs, js].map((icon, i) => (
             <div key={i} className={iconBox}>
               <img src={icon} className="w-8 h-8" />
@@ -91,7 +91,7 @@ const SkillsCard = () => {
           Jest, React Testing Library
         </span>
 
-        <div className="flex gap-5 flex-wrap items-center my-10">
+        <div className="flex gap-5 flex-wrap items-center mt-10">
           {[jest, test].map((icon, i) => (
             <div key={i} className={iconBox}>
               <img src={icon} className="w-8 h-8" />
@@ -109,7 +109,7 @@ const SkillsCard = () => {
           GitHub, Figma, REST APIs, GraphQL
         </span>
 
-        <div className="flex gap-5 flex-wrap items-center my-10">
+        <div className="flex gap-5 flex-wrap items-center mt-10">
           {[figma, rest, graphQL].map((icon, i) => (
             <div key={i} className={iconBox}>
               <img src={icon} className="w-8 h-8" />
