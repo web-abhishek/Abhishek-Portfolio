@@ -24,7 +24,7 @@ const Banner = () => {
         <h1 className="text-6xl font-bold color-primary text-center mt-10 leading-18 font-primary">Hi, I’m Abhishek Acharya <br></br>
           <TypingAnimation words={["Frontend Developer.", "React Js Developer.", "UI Developer."]} loop />
         </h1>
-        <p className="mx-auto text-center mt-6 color-secondary text-base w-3xl font-secondary leading-7">
+        <p className="mx-auto text-center mt-6 color-secondary text-base w-3xl font-secondary leading-7 text-wrap">
           Building Scalable Web Experiences with Clean Code & Modern UI. Frontend Developer crafting fast, responsive, and user-centric digital products.
         </p>
       </div>
