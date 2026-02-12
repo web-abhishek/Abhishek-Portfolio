@@ -4,7 +4,7 @@ import dripCartel from "../assets/DripCartel-ReactContext.png";
 import urbanRootsJS from "../assets/UrbanRoots-Js.png";
 import digitalWorxJS from "../assets/Digitalworx-Js.png";
 import urbanRootsFigma from "../assets/UrbanRoots-Figma.png";
-import digitalWorxFigma from "../assets/DigitalWorx-Figma.png";
+import digitalWorxFigma from "../assets/Digitalworx-Figma.png";
 
 
 const initialProjects = [
