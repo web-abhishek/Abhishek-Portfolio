@@ -18,7 +18,6 @@ const Contact = () => {
 
     return (
         <>
-            {/* Hero Section */}
             <section className="py-16 md:py-24">
                 <div className="container-custom text-center">
                     <h1 className="text-4xl md:text-5xl font-bold font-display text-gray-300 mb-4 animate-fade-in">

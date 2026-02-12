@@ -13,7 +13,7 @@ const SocialLink = ({ href, icon: Icon, label, variant = 'default' }) => {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`p-3 rounded-full transition-all duration-300 ${variants[variant]} focus-ring`}
+      className={`p-3 rounded-xl transition-all duration-300 ${variants[variant]} focus-ring`}
       aria-label={label}
     >
       <Icon className="w-5 h-5" />
