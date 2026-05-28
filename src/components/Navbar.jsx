@@ -5,6 +5,7 @@ import { IoMdMail } from "react-icons/io";
 import { Menu, X, Download } from 'lucide-react';
 import { AuroraText } from "./ui/aurora-text";
 import { BorderBeam } from "./ui/border-beam";
+import resumePdf from "../assets/abhishek_Frontend.pdf";
 
 const Navbar = () => {
   const navClass = ({ isActive }) => `px-3 py-2 text-sm font-medium
@@ -34,19 +35,18 @@ const Navbar = () => {
       <div className="flex justify-between items-center py-2 sm:py-3 px-3 sm:px-4">
         <img alt="logo" src={logo} className="w-24 sm:w-28 md:w-34" />
 
-        <a
-          href="/resume.pdf"
+        <a href={resumePdf}
           download
           className="
-    relative overflow-hidden
-    inline-flex items-center gap-2
-    px-4 py-3 text-sm font-medium
-    rounded-lg
-    bg-[linear-gradient(145deg,#1e2024,#23272b)]
-    hover:bg-[linear-gradient(to_right_bottom,#212428,#16181c)]
-    transition-all duration-300
-    shadow-[10px_10px_19px_#1c1e22,-10px_-10px_19px_#262a2e]
-  "
+                      relative overflow-hidden
+                      inline-flex items-center gap-2
+                      px-4 py-3 text-sm font-medium
+                      rounded-lg
+                      bg-[linear-gradient(145deg,#1e2024,#23272b)]
+                      hover:bg-[linear-gradient(to_right_bottom,#212428,#16181c)]
+                      transition-all duration-300
+                      shadow-[10px_10px_19px_#1c1e22,-10px_-10px_19px_#262a2e]
+                    "
         >
           <BorderBeam
             duration={6}

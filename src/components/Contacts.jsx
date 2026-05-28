@@ -4,6 +4,7 @@ import SocialLink from './SocialLink';
 import { Menu, X, Download } from 'lucide-react';
 import { AuroraText } from "./ui/aurora-text";
 import { BorderBeam } from "./ui/border-beam";
+import resumePdf from "../assets/abhishek_Frontend.pdf";
 
 const Contact = () => {
 
@@ -31,7 +32,7 @@ const Contact = () => {
                         Fill out the form below or reach out through any of my social channels.
                     </p>
                     <a
-                              href="/resume.pdf"
+                              href={resumePdf}
                               download
                               className="
                         relative overflow-hidden
