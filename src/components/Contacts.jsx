@@ -4,7 +4,7 @@ import SocialLink from './SocialLink';
 import { Menu, X, Download } from 'lucide-react';
 import { AuroraText } from "./ui/aurora-text";
 import { BorderBeam } from "./ui/border-beam";
-import resumePdf from "../public/abhishek_Frontend.pdf";
+import resumePdf from "../assets/abhishek_Frontend.pdf";
 
 const Contact = () => {
 
