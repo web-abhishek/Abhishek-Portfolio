@@ -5,11 +5,23 @@ import urbanRootsJS from "../assets/UrbanRoots-Js.png";
 import digitalWorxJS from "../assets/Digitalworx-Js.png";
 import urbanRootsFigma from "../assets/UrbanRoots-Figma.png";
 import digitalWorxFigma from "../assets/Digitalworx-Figma.png";
-
+import Foodzone from "../assets/foodzone.png";
 
 const initialProjects = [
   {
     id: 1,
+    title: "FoodZone-Food Ordering",
+    description:
+      "Built a responsive food ordering application using React, Redux, and Tailwind CSS, featuring dynamic restaurant listings, menu browsing with seamless cart management.",
+    technologies: ["React", "Redux", "Tailwind CSS"],
+    category: "React Js",
+    thumbnail: Foodzone,
+    liveUrl: "https://foodszone.netlify.app/",
+    githubUrl: "https://github.com/web-abhishek/FoodZone-Food-Ordering",
+    featured: true,
+  },
+  {
+    id: 2,
     title: "NetflixAI-onlineShows",
     description:
       "Built a Netflix-inspired streaming platform using React, Redux, and Tailwind CSS with OpenAI-powered smart search functionality.",
@@ -21,7 +33,7 @@ const initialProjects = [
     featured: true,
   },
   {
-    id: 2,
+    id: 3,
     title: "DripCartel-E-commerce",
     description:
       "Created a scalable e-commerce application with React.js and Context API, implementing dynamic product pages, cart functionality, and order management with Tailwind CSS styling.",
@@ -33,7 +45,7 @@ const initialProjects = [
     featured: true,
   },
   {
-    id: 3,
+    id: 4,
     title: "UrbanRoots Plant Selling",
     description:
       "Built a responsive plant-based e-commerce platform featuring product listings, shopping cart functionality, and interactive UI using HTML, CSS, Bootstrap 5, and JavaScript.",
@@ -45,7 +57,7 @@ const initialProjects = [
     featured: true,
   },
   {
-    id: 4,
+    id: 5,
     title: "DigitalWorx-Agency Website",
     description:
       "Built a dynamic digital marketing agency website featuring service sections, contact forms, and interactive components using HTML, CSS, Bootstrap 5, and JavaScript.",
@@ -57,7 +69,7 @@ const initialProjects = [
     featured: true,
   },
   {
-    id: 5,
+    id: 6,
     title: "UrbanRoots-UI/UX Design",
     description:
       "Created a plant-based e-commerce UI/UX design in Figma, including core user journeys, high-fidelity screens, and clickable prototypes.",
@@ -69,7 +81,7 @@ const initialProjects = [
     featured: false,
   },
   {
-    id: 6,
+    id: 7,
     title: "DigitalWorx-UI/UX Design",
     description:
       "Created a digital marketing agency UI/UX design in Figma, including core user journeys, high-fidelity screens, and clickable prototypes.",

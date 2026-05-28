@@ -17,45 +17,39 @@ const ProjectCard = ({ project }) => {
   } = project;
   
   return (
-      <div className="p-10 h-full rounded-3xl bg-[linear-gradient(145deg,#1e2024,#23272b)] hover:bg-[linear-gradient(to_right_bottom,#212428,#16181c)] transition-all duration-300 shadow-[10px_10px_19px_#1c1e22,-10px_-10px_19px_#262a2e]">
-        <div className="rounded-2xl">
-          <img src={thumbnail} alt={title} className="rounded-4xl" />
+      <div className="h-full rounded-2xl bg-[linear-gradient(145deg,#1e2024,#23272b)] hover:bg-[linear-gradient(to_right_bottom,#212428,#16181c)] transition-all duration-300 shadow-[10px_10px_19px_#1c1e22,-10px_-10px_19px_#262a2e]">
+        <div className="rounded-xl rounded-b-none overflow-hidden">
+          <img src={thumbnail} alt={title} className="w-full h- " />
         </div>
-        <div className="p-5">
-          <h2 className="font-bold mb-3 text-3xl text-white font-primary">
+        <div className="p-4 sm:p-5">
+          <h2 className="font-bold mb-3 text-xl sm:text-2xl text-white font-primary">
             <a href="">{title}</a>
           </h2>
-          <p className="font-normal text-md text-gray-400 block mt-6">
+          <p className="font-normal text-xs sm:text-sm md:text-base leading-7 text-gray-400 block mt-4 sm:mt-6">
             {description}
           </p>
-          <p className="font-normal text-md text-gray-400 block mb-3">
+          <p className="font-medium text-xs sm:text-sm md:text-base  text-gray-300 block my-5 sm:my-6">
             Tech Stack Used:
           </p>
-          <div className="flex flex-wrap items-center gap-3.5">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
             {technologies?.map((item, i)=>
-            <span key={i} className="rounded px-3 py-2 bg-gray-800 color-primary text-sm font-normal border border-gray-700">
+            <span key={i} className="rounded px-2 sm:px-3 py-1 sm:py-2 bg-gray-800 color-primary text-xs sm:text-sm font-normal border border-gray-700">
               {item}
             </span>
           )}
           </div>
-          {/* <a href={liveUrl} className="font-normal text-md text-gray-400 block mt-6">
-            Live Demo: {liveUrl}
-          </a>
-          <a href={githubUrl} className="font-normal text-md text-gray-400 block mt-3">
-            View Code: {githubUrl}
-          </a> */}
         
-        <div className="mt-6 flex flex-wrap gap-4">
+        <div className="mt-5 sm:mt-6 flex flex-wrap gap-2 sm:gap-4">
   {liveUrl && (
     <a
       href={liveUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-center px-6 py-3 rounded-lg 
-                 bg-[#f2574f] text-white font-medium 
-                 hover:opacity-90 transition-all duration-300 flex items-center gap-3"
+      className="text-center px-4 sm:px-6 py-2 sm:py-3 rounded-lg 
+                 bg-[#f2574f] text-white font-medium text-xs sm:text-sm
+                 hover:opacity-90 transition-all duration-300 flex items-center gap-2"
     >
-      Live Demo <ExternalLink/>
+      Live Demo <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4"/>
     </a>
   )}
 
@@ -64,12 +58,12 @@ const ProjectCard = ({ project }) => {
       href={githubUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-center px-6 py-3 rounded-lg 
-                 border border-[#f2574f] text-[#f2574f] font-medium 
+      className="text-center px-4 sm:px-6 py-2 sm:py-3 rounded-lg 
+                 border border-[#f2574f] text-[#f2574f] font-medium text-xs sm:text-sm
                  hover:bg-[#f2574f] hover:text-white 
-                 transition-all duration-300 flex items-center gap-3"
+                 transition-all duration-300 flex items-center gap-2"
     >
-      View Code <ExternalLink />
+      View Code <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4"/>
     </a>
   )}
 </div>
