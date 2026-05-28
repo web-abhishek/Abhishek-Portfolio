@@ -13,8 +13,9 @@ const initialProjects = [
     title: "FoodZone-Food Ordering",
     description:
       "Built a responsive food ordering application using React, Redux, and Tailwind CSS, featuring dynamic restaurant listings, menu browsing with seamless cart management.",
-    technologies: ["React", "Redux", "Tailwind CSS"],
-    category: "React Js",
+    technologies: ["React Js", "Redux", "Tailwind CSS"],
+    technologies1: "React Js",
+    category: "Frontend",
     thumbnail: Foodzone,
     liveUrl: "https://foodszone.netlify.app/",
     githubUrl: "https://github.com/web-abhishek/FoodZone-Food-Ordering",
@@ -25,8 +26,9 @@ const initialProjects = [
     title: "NetflixAI-onlineShows",
     description:
       "Built a Netflix-inspired streaming platform using React, Redux, and Tailwind CSS with OpenAI-powered smart search functionality.",
-    technologies: ["React", "Redux", "Tailwind CSS", "Open API", "Firebase"],
-    category: "React Js",
+    technologies: ["React Js", "Redux", "Tailwind CSS", "Open API", "Firebase"],
+    technologies1: "React Js",
+    category: "Frontend",
     thumbnail: netflixAI,
     liveUrl: "https://netflixgpt-onlineshows.web.app/",
     githubUrl: "https://github.com/web-abhishek/NetflixAI",
@@ -37,8 +39,9 @@ const initialProjects = [
     title: "DripCartel-E-commerce",
     description:
       "Created a scalable e-commerce application with React.js and Context API, implementing dynamic product pages, cart functionality, and order management with Tailwind CSS styling.",
-    technologies: ["React", "Context API", "Tailwind CSS"],
-    category: "React Js",
+    technologies: ["React Js", "Context API", "Tailwind CSS"],
+    technologies1: "React Js",
+    category: "Frontend",
     thumbnail: dripCartel,
     liveUrl: "https://dripcartel-app.netlify.app/",
     githubUrl: "https://github.com/web-abhishek/DripCartel-E-commerce",
@@ -50,7 +53,8 @@ const initialProjects = [
     description:
       "Built a responsive plant-based e-commerce platform featuring product listings, shopping cart functionality, and interactive UI using HTML, CSS, Bootstrap 5, and JavaScript.",
     technologies: ["HTML", "Bootstrap 5", "JavaScript", "CSS3"],
-    category: "JavaScript",
+    technologies1: "JavaScript",
+    category: "Frontend",
     thumbnail: urbanRootsJS,
     liveUrl: "https://urbanroots-js.netlify.app/",
     githubUrl: "https://github.com/web-abhishek/UrbanRoots",
@@ -62,7 +66,8 @@ const initialProjects = [
     description:
       "Built a dynamic digital marketing agency website featuring service sections, contact forms, and interactive components using HTML, CSS, Bootstrap 5, and JavaScript.",
     technologies: ["HTML", "Bootstrap 5", "JavaScript", "CSS3"],
-    category: "JavaScript",
+    technologies1: "JavaScript",
+    category: "Frontend",
     thumbnail: digitalWorxJS,
     liveUrl: "https://digitalworx-js.netlify.app/",
     githubUrl: "https://github.com/web-abhishek/Digitalworx_js",
@@ -74,7 +79,8 @@ const initialProjects = [
     description:
       "Created a plant-based e-commerce UI/UX design in Figma, including core user journeys, high-fidelity screens, and clickable prototypes.",
     technologies: ["Figma", "Photoshop"],
-    category: "Figma",
+    technologies1: "Figma",
+    category: "UI/UX",
     thumbnail: urbanRootsFigma,
     liveUrl:
       "https://www.figma.com/proto/xTmKXSjSfEqpyJxG17aewa/urbanroots?node-id=2-2&t=sj449ZKq3ki0xRPr-1",
@@ -86,7 +92,8 @@ const initialProjects = [
     description:
       "Created a digital marketing agency UI/UX design in Figma, including core user journeys, high-fidelity screens, and clickable prototypes.",
     technologies: ["Figma", "Photoshop"],
-    category: "Figma",
+    technologies1: "Figma",
+    category: "UI/UX",
     thumbnail: digitalWorxFigma,
     liveUrl:
       "https://www.figma.com/proto/H7GYxiobjGTbNfMy2jjL7g/DigitalWorx?node-id=8-18&t=nGdRtUDVP03BQMTO-1&starting-point-node-id=313%3A959",
@@ -98,7 +105,7 @@ const initialProjects = [
 const getAllTechnologies = (projects) => {
   const techSet = new Set();
   projects.forEach(project => {
-    project.technologies.forEach(tech => techSet.add(tech));
+    techSet.add(project.technologies1);
   });
   return Array.from(techSet).sort();
 };

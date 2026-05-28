@@ -25,7 +25,7 @@ const Projects = () => {
 
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
-            <section className="py-12 sm:py-16 md:py-24 hero-gradient">
+            <section className="py-3 hero-gradient">
                 <div className="container-custom text-center">
                     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-primary font-bold font-display mb-4 animate-fade-in color-primary">
                         Featured Projects
